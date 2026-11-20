@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1248e8"><title>Tabayyun Institute</title>
+<link rel="manifest" href="manifest.json">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f6fb;color:#172033;font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif}
+header{background:linear-gradient(145deg,#09276e,#1552ef 70%,#2768ff);color:white;padding:24px 20px 34px;border-radius:0 0 28px 28px}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;background:white;color:#174ce4;border-radius:15px;display:grid;place-items:center;font-weight:900;font-size:24px}
+.brand small{display:block;letter-spacing:3px;color:#ffd34b;font-size:10px}.brand h1{margin:0;font-size:22px}
+.tag{margin-top:24px;color:#ffda57;font-weight:700}.hero h2{font-size:27px;line-height:1.45;margin:8px 0}.hero p{color:#e4eaff;margin:0}
+.btn{display:inline-block;border:0;border-radius:14px;padding:12px 17px;font-weight:700;text-decoration:none;background:#ffcf38;color:#14224c;margin-top:18px}
+main{padding:18px 16px 100px;max-width:720px;margin:auto}.section{margin:22px 0}.section h3{margin:0 0 12px;font-size:20px}
+.card{background:white;border-radius:18px;padding:17px;box-shadow:0 5px 20px #10224b0b;margin-bottom:12px}
+.course{display:flex;gap:13px;align-items:center}.icon{width:52px;height:52px;border-radius:15px;background:#eaf0ff;display:grid;place-items:center;font-size:24px}
+.course h4{margin:0 0 4px}.course p{margin:0;color:#647086;font-size:13px}.pill{display:inline-block;background:#eef3ff;color:#2452cc;border-radius:99px;padding:5px 10px;font-size:12px;margin-top:8px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tile{background:white;border-radius:17px;padding:16px}.tile strong{display:block;margin-top:9px}.tile span{font-size:12px;color:#647086}
+nav{position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid #e8eaf1;display:flex;justify-content:space-around;padding:9px 5px env(safe-area-inset-bottom,8px);z-index:5}
+nav button{border:0;background:none;color:#68758b;font-size:12px;display:flex;flex-direction:column;align-items:center;gap:3px;padding:5px 12px}
+nav button.active{color:#174ce4;font-weight:800}nav i{font-style:normal;font-size:22px}
+.panel{display:none}.panel.active{display:block}
+input,select,textarea{width:100%;border:1px solid #dbe1ed;border-radius:12px;padding:12px;font:inherit;margin:7px 0;background:white}
+.submit{width:100%;background:#174ce4;color:white;border:0;border-radius:13px;padding:14px;font-weight:800}
+footer{text-align:center;color:#718096;font-size:12px;padding:20px}
+</style>
+</head>
+<body>
+<header>
+<div class="brand"><div class="logo">ت</div><div><h1>Tabayyun</h1><small>INSTITUTE</small></div></div>
+<div class="hero"><div class="tag">A GLOBAL ISLAMIC LEARNING PLATFORM</div>
+<h2>কুরআনকে বুঝুন।<br>আরবি শিখুন। সহীহ জ্ঞান অর্জন করুন।</h2>
+<p>আল্লাহর সাথে সম্পর্ক আরও গভীর করুন।</p>
+<a class="btn" href="#courses" onclick="show('courses')">শেখা শুরু করুন →</a></div>
+</header>
+<main>
+<section id="home" class="panel active">
+<div class="section"><h3>আপনার শেখার যাত্রা</h3><div class="card"><b>আসসালামু আলাইকুম 👋</b><p>ইলমের পথে আপনার যাত্রায় Tabayyun Institute পাশে আছে।</p></div></div>
+<div class="section"><h3>আমাদের প্রোগ্রাম</h3><div class="grid">
+<div class="tile">📖<strong>কুরআন বুঝুন</strong><span>অর্থ ও তাফসিরভিত্তিক শিক্ষা</span></div><div class="tile">🗣️<strong>আরবি শিখুন</strong><span>ভাষার ভিত্তি থেকে অগ্রগতি</span></div><div class="tile">🧭<strong>সহীহ জ্ঞান</strong><span>নির্ভরযোগ্য ইসলামি শিক্ষা</span></div><div class="tile">🤍<strong>আত্মিক উন্নয়ন</strong><span>আল্লাহর সাথে সম্পর্ক</span></div>
+</div></div>
+<div class="section"><h3>জনপ্রিয় কোর্স</h3><div class="card course"><div class="icon">📚</div><div><h4>কুরআন বুঝতে আরবি</h4><p>ধাপে ধাপে আরবি ভাষা শিক্ষা</p><span class="pill">শিক্ষানবিস</span></div></div><div class="card course"><div class="icon">🌙</div><div><h4>কুরআন অধ্যয়ন</h4><p>অর্থ, উপলব্ধি ও আমল</p><span class="pill">সবার জন্য</span></div></div></div>
+</section>
+<section id="courses" class="panel"><div class="section"><h3>কোর্সসমূহ</h3>
+<div class="card course"><div class="icon">📘</div><div><h4>আরবি ভাষা কোর্স</h4><p>কুরআনের ভাষা বোঝার জন্য ভিত্তি গড়ে তুলুন।</p><span class="pill">ভর্তি চলছে</span></div></div>
+<div class="card course"><div class="icon">📖</div><div><h4>কুরআন বুঝুন</h4><p>শব্দার্থ, বিষয়ভিত্তিক পাঠ ও ব্যাখ্যা।</p><span class="pill">অনলাইন</span></div></div>
+<div class="card course"><div class="icon">🕌</div><div><h4>ইসলামি জ্ঞান</h4><p>বিশ্বস্ত উৎস থেকে জ্ঞান অর্জন।</p><span class="pill">নতুন ব্যাচ</span></div></div></div></section>
+<section id="classes" class="panel"><div class="section"><h3>ক্লাস</h3><div class="card"><h4>আপনার ক্লাসের আপডেট</h4><p>ক্লাসের সময়সূচি ও লিংক এখানে দেখানো হবে।</p><span class="pill">শীঘ্রই আপডেট</span></div></div></section>
+<section id="admission" class="panel"><div class="section"><h3>ভর্তি আবেদন</h3><div class="card"><p>আপনার তথ্য দিয়ে ভর্তি আগ্রহ জমা দিন।</p><form onsubmit="event.preventDefault();alert('আবেদনটি ডেমো হিসেবে গ্রহণ করা হয়েছে। আসল সার্ভারে যুক্ত হলে তথ্য পাঠানো যাবে।')"><input placeholder="আপনার নাম" required><input type="tel" placeholder="মোবাইল নম্বর" required><select required><option value="">কোর্স নির্বাচন করুন</option><option>আরবি ভাষা কোর্স</option><option>কুরআন বুঝুন</option><option>ইসলামি জ্ঞান</option></select><textarea placeholder="আপনার প্রশ্ন (ঐচ্ছিক)" rows="3"></textarea><button class="submit">আবেদন জমা দিন</button></form></div></div></section>
+</main>
+<nav><button class="active" onclick="show('home',this)"><i>⌂</i>হোম</button><button onclick="show('courses',this)"><i>▤</i>কোর্স</button><button onclick="show('classes',this)"><i>▶</i>ক্লাস</button><button onclick="show('admission',this)"><i>♙+</i>ভর্তি</button></nav>
+<footer>Tabayyun Institute · Understand the Qur’an. Learn Arabic. Connect with Allah.</footer>
+<script>
+function show(id,btn){document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));if(btn)btn.classList.add('active');else document.querySelectorAll('nav button')[['home','courses','classes','admission'].indexOf(id)].classList.add('active');window.scrollTo(0,0)}
+if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js');
+</script>
+</body></html>
